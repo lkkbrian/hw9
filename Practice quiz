@@ -1,0 +1,49 @@
+//1. Use if statement when you want  specific event to happen by giving conditions for the program to execute the code. In here the led  is going to light up when the sensorvalue is more than or equal to 512.
+  if (sensorValue >= 512) {
+    digitalWrite(ledPin2, HIGH);
+  }
+  
+//2. A while loop keeps the event going forever. A for loop keeps the event going until a certain point, then it stops. You can change he amount of times it loops and how fast it loops.
+
+//3. Since z < 19, the maximum integer z can be is 18.
+  z = z + 6
+  z = 18 + 6
+  z = 24
+  The final value of z is 24.
+
+//4.
+  function setup() {
+  createCanvas(200, 200);
+}
+
+function draw() {
+  background(220);
+  for(var i = 0; i < 9; i++) {
+    line(20 + i * 10, 20 , 100 + i * 10, 100);
+    line(20 + i * 10, 180, 100 + i * 10, 100);
+  }
+}
+
+//5.
+VARIABLE NAME | VARIABLE VALUE
+offset        | height / 5
+x             | 10
+
+//6. a) 85
+     b) 99
+    
+//7. Control the speed of motor = analogWrite
+     Turn on or off an LED = digitalRead
+     Read a value from a potentiometer = analogRead
+     Determine if an input is High or Low = digitalWrite
+     
+//8. 
+ void setup() {
+  pinMode(pin3, OUTPUT);
+ }
+ void loop() {
+  digitalWrite(pin3, HIGH);
+  delay(200);
+  digital write(pin3, low);
+  delay(200);
+ }
